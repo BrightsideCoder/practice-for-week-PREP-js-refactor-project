@@ -121,7 +121,15 @@ function countConsonants(word) {
     The `.join('')` function joins the elements in an array into a string.
 */
 function alternatingLetters(str) {
-    return str.toLowerCase();
+    let newArr = [];
+    for (let i = 0; i < str.length; i++) {
+        if (i % 2 === 0) {
+            newArr.push(str[i].toLowerCase());
+        } else {
+            newArr.push(str[i].toUpperCase());
+        }
+    }
+    return newArr.join("");
 }
 
 
