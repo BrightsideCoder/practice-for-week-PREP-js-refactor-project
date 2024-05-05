@@ -79,7 +79,7 @@ function productArray(arr) {
     if the number is divisible by BOTH 5 and 11 and `false` otherwise.
 */
 function fiveAndEleven(num) {
-    return num % 3 === 0 || num % 7 === 0;
+    return num % 5 === 0 && num % 11 === 0;
 }
 
 
