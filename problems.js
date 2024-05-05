@@ -22,11 +22,13 @@ function plusTen(num) {
     multiples of 7 that are less than max.
 */
 function returnSevens(max) {
+    let newArr = [];
     for (let i = 0; i < max; i++) {
-        if (i % 5 === 0) {
-            console.log(i);
+        if (i % 7 === 0) {
+            newArr.push(i);
         }
     }
+    return newArr;
 }
 
 
@@ -44,7 +46,7 @@ function returnSevens(max) {
     the sentence, and `false` if neither or only 1 is found.
 */
 function bothStringsIncluded(sentence, word1, word2) {
-    return sentence.includes(word1) || sentence.includes(word2);
+    return sentence.includes(word1) && sentence.includes(word2);
 }
 
 
@@ -59,11 +61,11 @@ function bothStringsIncluded(sentence, word1, word2) {
     you get when you multiply all the numbers together.
 */
 function productArray(arr) {
-    let sum = 0;
+    let product = 1;
     for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
+        product *= arr[i];
     }
-    return sum;
+    return product;
 }
 
 
